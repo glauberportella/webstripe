@@ -1,5 +1,4 @@
 $(window).load(function(){
-  // fix ie backbone history
   var enablePushState = true;
   // Disable for older browsers
   var pushState = !!(enablePushState && window.history && window.history.pushState);

@@ -26,7 +26,6 @@ group :development, :test do
   gem "jasminerice"
   gem "better_errors", :git => "https://github.com/charliesome/better_errors.git"
   gem "binding_of_caller"
-  gem "mysql"
 end
 
 group :assets do
