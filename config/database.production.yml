@@ -1,9 +1,9 @@
 default: &global
-  adapter: mysql
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   pool: 5
-  username: root
-  password: devgp12
+  template: template1
+  min_messages: warning
   host: 127.0.0.1
 
 development:
@@ -14,3 +14,6 @@ test:
   <<: *global
   database: webstripe_test
 
+production:
+  <<: *global
+  database: webstripe_production

@@ -1,4 +1,11 @@
 $(window).load(function(){
+  // fix ie backbone history
+  var enablePushState = true;
+  // Disable for older browsers
+  var pushState = !!(enablePushState && window.history && window.history.pushState);
+  console.log(pushState);
+  //Backbone.History.extend({ pushState: pushState });
+
   var alignment = $("body").data("alignment");
   if (alignment == "horizontal") {
     alignHorizontally();
